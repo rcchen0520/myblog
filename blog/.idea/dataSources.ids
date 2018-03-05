@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - blog@localhost" uuid="63646573-2d09-4975-9359-e6c6001c01f8">
+    <database-info product="MySQL" version="5.6.29" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="blog"/>
+    <table name="blog_article" schema="" catalog="blog" type="TABLE">
+      <column name="art_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/mlofnq6BJRA==" autoIncrement="true"/>
+      <column name="art_title" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/mlofnq6DmoIfpopg="/>
+      <column name="art_tag" sqlType="VARCHAR" precision="100" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/mlofnq6DlhbPplK7lrZc="/>
+      <column name="art_description" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/mlofnq6Dmj4/ov7A="/>
+      <column name="art_thumb" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/mlofnq6DnvKnnlaXlm74="/>
+      <column name="art_content" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1" remarks="Ly/mlofnq6DlhoXlrrk="/>
+      <column name="art_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/mlofnq6Dlj5HluIPml7bpl7Q="/>
+      <column name="art_editor" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/mlofnq6DkvZzogIU="/>
+      <column name="art_cate_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="Ly/liIbnsbtpZA=="/>
+      <column name="art_view" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="Ly/ngrnlh7vmrKHmlbA="/>
+      <primary-key name="PRIMARY" columns="art_id"/>
+    </table>
+    <table name="blog_category" schema="" catalog="blog" type="TABLE">
+      <column name="cate_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/liIbnsbtJRA==" autoIncrement="true"/>
+      <column name="cate_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/liIbnsbvlkI0="/>
+      <column name="cate_title" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/liIbnsbvmoIfpopg="/>
+      <column name="cate_keywords" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" remarks="Ly/lhbPplK7lrZc="/>
+      <column name="cate_description" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/mj4/ov7A="/>
+      <column name="cate_view" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="Ly/mrKHmlbA="/>
+      <column name="cate_order" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA==" remarks="Ly/mjpLluo8="/>
+      <column name="cate_pid" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="Ly/niLbnuqdpZA=="/>
+      <primary-key name="PRIMARY" columns="cate_id"/>
+    </table>
+    <table name="blog_config" schema="" catalog="blog" type="TABLE">
+      <column name="conf_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/phY3nva5pZA==" autoIncrement="true"/>
+      <column name="conf_title" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/moIfpopg="/>
+      <column name="conf_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/lkI3np7A="/>
+      <column name="conf_content" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1" remarks="Ly/phY3nva7lhoXlrrk="/>
+      <column name="conf_order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="Ly/mjpLluo8="/>
+      <column name="conf_tips" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/mj4/ov7A="/>
+      <column name="field_type" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/nsbvlnos="/>
+      <column name="field_value" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/nsbvlnovlgLw="/>
+      <primary-key name="PRIMARY" columns="conf_id"/>
+    </table>
+    <table name="blog_discuss" schema="" catalog="blog" type="TABLE">
+      <column name="dis_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/or4TorrpJRA==" autoIncrement="true"/>
+      <column name="dis_use_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/or4TorrrnlKjmiLflkI0="/>
+      <column name="dis_art_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="Ly/mlofnq6BJRA=="/>
+      <column name="dis_reply_name" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/lm57lpI3nlKjmiLflkI0="/>
+      <column name="dis_content" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/or4TorrrlhoXlrrk="/>
+      <column name="dis_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/or4Torrrml7bpl7Q="/>
+      <primary-key name="PRIMARY" columns="dis_id"/>
+    </table>
+    <table name="blog_links" schema="" catalog="blog" type="TABLE">
+      <column name="link_id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/pk77mjqVJRA==" autoIncrement="true"/>
+      <column name="link_name" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/lkI3np7A="/>
+      <column name="link_title" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/moIfpopg="/>
+      <column name="link_url" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="6ZO+5o6l5Zyw5Z2A"/>
+      <column name="link_order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="5o6S5bqP"/>
+      <primary-key name="PRIMARY" columns="link_id"/>
+    </table>
+    <table name="blog_migrations" schema="" catalog="blog" type="TABLE">
+      <column name="migration" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="batch" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="blog_navs" schema="" catalog="blog" type="TABLE">
+      <column name="nav_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/lr7zoiKppZA==" autoIncrement="true"/>
+      <column name="nav_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/lr7zoiKrlkI3np7A="/>
+      <column name="nav_alias" sqlType="VARCHAR" precision="50" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/liKvlkI0="/>
+      <column name="nav_url" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/lnLDlnYA="/>
+      <column name="nav_order" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="Ly/lr7zoiKrmjpLluo8="/>
+      <primary-key name="PRIMARY" columns="nav_id"/>
+    </table>
+    <table name="blog_picture" schema="" catalog="blog" type="TABLE">
+      <column name="pic_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/lm77niYdpZA==" autoIncrement="true"/>
+      <column name="pic_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/lm77niYflkI3np7A="/>
+      <column name="pic_tips" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12" def="Jyc=" remarks="Ly/mj4/ov7A="/>
+      <column name="pic_url" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/lm77niYflnLDlnYA="/>
+      <column name="pic_thumb" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" def="Jyc=" remarks="Ly/lm77niYfnvKnnlaXlm74="/>
+      <column name="pic_time" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MA==" remarks="Ly/lm77niYfkuIrkvKDml7bpl7Q="/>
+      <primary-key name="PRIMARY" columns="pic_id"/>
+    </table>
+    <table name="blog_user" schema="" catalog="blog" type="TABLE">
+      <column name="user_id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" remarks="Ly/nlKjmiLdJRA==" autoIncrement="true"/>
+      <column name="user_name" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12" remarks="Ly/nlKjmiLflkI0="/>
+      <column name="user_pass" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12" remarks="Ly/nlKjmiLflr4bnoIE="/>
+      <primary-key name="PRIMARY" columns="user_id"/>
+    </table>
+  </data-source>
+</component>
